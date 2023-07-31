@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Movie App</title>
+</head>
+<body>
+
+    <header>
+        <div class="nav container">
+            <a href="index.html" class="logo">
+                Binge!!! <span>Movies</span>
+            </a>
+            <div class="search-box">
+                <input type="search" name="" id="search-input" placeholder="search movie">
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="navbar">
+                <a href="#home" class="nav-link nav-active">
+                <i class="fa fa-home"></i>
+                <span class="nav-link-title">Home</span>
+                </a>
+                <a href="#home" class="nav-link">
+                    <i class="fa fa-film"></i>
+                <span class="nav-link-title">Top Movies</span>
+                </a>
+                <a href="#home" class="nav-link">
+                <i class="fa fa-tv"></i>
+                <span class="nav-link-title">Popular</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <img src="moviehome.avif" alt="" class="home-img">
+        <div class="home-text">
+            <h1 class="home-title">Watch Now <span>!!!</span></h1>
+        </div>
+    </section>
+
+    <section class="top container" id="top">
+        <div class="heading">
+            <h2 class="heading-title">Top Movies</h2>
+        </div>
+        <!-- <div class="top_div" id="topdiv">
+
+        </div> -->
+        <div id="movieCarousel" class="carousel slide" data-ride="carousel">
+
+            <ul class="carousel-indicators"></ul>
+      
+            <div class="carousel-inner"></div>
+      
+            <a class="carousel-control-prev" href="#movieCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#movieCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
