@@ -1,8 +1,7 @@
-// 287192cb5f5a2c8035ff273f8797bf14
-
 const API_KEY ='api_key=287192cb5f5a2c8035ff273f8797bf14';
 const BASE_URL ='https://api.themoviedb.org/3';
 const TOP_URL = BASE_URL + '/trending/movie/day?' + API_KEY + "&language=en-US&page=1";
+const MOVIE_DETAIL_URL = `https://api.themoviedb.org/3/movie/`;
 
 const topdiv = document.getElementById("topdiv");
 
