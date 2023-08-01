@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Movie App</title>
@@ -12,22 +11,23 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="./index.html">Movie List</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-            </ul>
+    <section>
+        <div class="row" id="search-bar">
+            <div class="col-6">
+                <form id="search" class="form-inline">
+                    <label class="sr-only" for="inlineFormInputName2">Name</label>
+                    <input type="text" class="form-control mb-2 mr-sm-2" id="search-input"
+                        placeholder="search name ...">
+                    <button type="submit" class="btn mb-2">Search</button>
+                </form>
+            </div>
         </div>
-    </nav>
+    </section>
+
+    <section id="movie-suggestions" style="display: none;">
+        <div class="container row1" id="movie-cards">
+        </div>
+    </section>
 
     <div class="container mt-5">
 
@@ -55,32 +55,22 @@
     </div>
     </section>
 
-    <section>
-        <div class="row" id="search-bar">
-            <div class="col-6">
-                <form id="search" class="form-inline">
-                    <label class="sr-only" for="inlineFormInputName2">Name</label>
-                    <input type="text" class="form-control mb-2 mr-sm-2" id="search-input"
-                        placeholder="search name ...">
-                    <button type="submit" class="btn mb-2">Search</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
     <div class="container mt-5">
 
         <section class="top-container container" id="topdiv">
             <div class="heading">
                 <h2 class="heading-title">Popular Movies</h2>
             </div>
+            <div id="movies-container">
+
+            </div>
         </div>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
+    <script src="details.js"></script>
 </body>
 
 </html>
